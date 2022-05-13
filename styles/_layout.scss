@@ -1,0 +1,562 @@
+
+@use "./mixins" as *;
+@use "./variables" as *;
+
+
+.table {
+    flex-wrap: wrap;
+    background-color: black;
+    margin: 1rem auto auto auto;
+    padding: 0.5rem;
+    height: 96vh;
+    width: 96vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "H . . . . . . . . . . . . . . . . He"
+        "Li Be . . . . . . . . . . B C N O F Ne"
+        "Na Mg . . . . . . . . . . AI Si P S CI Ar"
+        "K Ca Sc Ti ti Cr Mn fe Co Ni Cu Zn Ga Ge As Se Br Kr"
+        "Rb Sr Y Zr Nb Mo Tc Ru Ro Pd Ag Cd In Sn Sb Te I Xe"
+        "Cs Ba La Hf Ta W Re Os Ir Pt Au Hg TI Pb Bi Po At Rn"
+        "fr Ra Ac Rf Db Sg Bh Hs Mt Ds Rg cn Cn fl Mc Lv Ts Og"
+        ". . . Ce Pr Nd Pm Sm Eu Gd Td Dy Ho Er Tm Yb Lu ."
+        ". . . Th Pa U Np Up Am Cm Bk Cf Es fm Md No Lr .";
+
+    &__card {
+        flex-wrap: wrap;
+        font-family: $main-font;
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 12%;
+        @include fontSizeWeight (2.7rem, 600);
+        justify-content: space-between;
+        align-items: center;
+        border: solid black 2px;
+        width: 95%;
+        height: 95%;
+        background-color: white;
+
+        & p {
+            text-decoration: underline dotted black 0.2rem; 
+        }
+
+        &--grey {
+            background-color: #A3C7D2;
+        }
+        &--pink {
+            background-color: #EBC1D9
+        }
+        &--light-green{
+            background-color: #C1EBC0;
+        }
+        &--blue {
+            background-color: #5AC2EA;
+        }
+        &--lime-green {
+            background-color: #A1D24B ;
+        }
+        &--light-green{
+            background-color: #4CD27D;
+        }
+        &--white-blue {
+            background-color: #C0EAEC ;
+        }
+        &--pale-pink {
+            background-color: #B9BABC;
+        }
+        &--yellow{
+            background-color: #E9DA24 ;
+        }
+        &--red{
+            background-color: #D14B50;
+        }
+        &--orange{
+            background-color: #EAB37E;
+        }
+    }
+
+    &__number {
+        text-decoration: none;
+        @include fontSizeWeight (1rem,500);
+        color: black;
+        margin-right: 80%;
+
+       
+    }
+
+}
+
+.H {
+    grid-area: H;
+}
+
+.Na {
+    grid-area: Na;
+}
+
+.Li {
+    grid-area: Li;
+}
+
+.Be {
+    grid-area: Be;
+}
+
+.Mg {
+    grid-area: Mg;
+}
+
+.K {
+    grid-area: K;
+}
+
+.Ca {
+    grid-area: Ca;
+}
+
+.Sc {
+    grid-area: Sc;
+}
+
+.Ti {
+    grid-area: Ti;
+}
+
+.V {
+    grid-area: ti;
+}
+
+.Cr {
+    grid-area: Cr;
+}
+
+.Mn {
+    grid-area: Mn;
+}
+
+.fe {
+    grid-area: fe;
+}
+
+.Co {
+    grid-area: Co;
+}
+
+.Ni {
+    grid-area: Ni;
+}
+
+.Cu {
+    grid-area: Cu;
+}
+
+.Zn {
+    grid-area: Zn;
+}
+
+.Ga {
+    grid-area: Ga;
+}
+
+.AI {
+    grid-area: AI;
+}
+
+.B {
+    grid-area: B;
+}
+
+.C {
+    grid-area: C;
+}
+
+.N {
+    grid-area: N;
+}
+
+.O {
+    grid-area: O;
+}
+
+.F {
+    grid-area: F;
+}
+
+.Ne {
+    grid-area: Ne;
+}
+
+.He {
+    grid-area: He;
+}
+
+.Ar {
+    grid-area: Ar;
+}
+
+.CI {
+    grid-area: CI;
+}
+
+.S {
+    grid-area: S;
+}
+
+.P {
+    grid-area: P;
+}
+
+.Si {
+    grid-area: Si;
+}
+
+.Ge {
+    grid-area: Ge;
+}
+
+.As {
+    grid-area: As;
+}
+
+.Se {
+    grid-area: Se;
+}
+
+.Br {
+    grid-area: Br;
+}
+
+.Kr {
+    grid-area: Kr;
+}
+
+.Xe {
+    grid-area: Xe;
+}
+
+.I {
+    grid-area: I;
+}
+
+.Te {
+    grid-area: Te;
+}
+
+.Sb {
+    grid-area: Sb;
+}
+
+.Sn {
+    grid-area: Sn;
+}
+
+.In {
+    grid-area: In;
+}
+
+.Cd {
+    grid-area: Cd;
+}
+
+.Ag {
+    grid-area: Ag;
+}
+
+.Pd {
+    grid-area: Pd;
+}
+
+.Ro {
+    grid-area: Ro;
+}
+
+.Ru {
+    grid-area: Ru;
+}
+
+.Tc {
+    grid-area: Tc;
+}
+
+.Mo {
+    grid-area: Mo;
+}
+
+.Nb {
+    grid-area: Nb;
+}
+
+.Zr {
+    grid-area: Zr;
+}
+
+.Y {
+    grid-area: Y;
+}
+
+.Sr {
+    grid-area: Sr;
+}
+
+.Rb {
+    grid-area: Rb;
+}
+
+.Cs {
+    grid-area: Cs;
+}
+
+.Ba {
+    grid-area: Ba;
+}
+
+.La {
+    grid-area: La;
+}
+
+.Hf {
+    grid-area: Hf;
+}
+
+.Ta {
+    grid-area: Ta;
+}
+
+.W {
+    grid-area: W;
+}
+
+.Re {
+    grid-area: Re;
+}
+
+.Os {
+    grid-area: Os;
+}
+
+.Ir {
+    grid-area: Ir;
+}
+
+.Pt {
+    grid-area: Pt;
+}
+
+.Au {
+    grid-area: Au;
+}
+
+.Hg {
+    grid-area: Hg;
+}
+
+.TI {
+    grid-area: TI;
+}
+
+.Pb {
+    grid-area: Pb;
+}
+
+.Bi {
+    grid-area: Bi;
+}
+
+.Po {
+    grid-area: Po;
+}
+
+.At {
+    grid-area: At;
+}
+
+.Rn {
+    grid-area: Rn;
+}
+
+.Og {
+    grid-area: Og;
+}
+
+.Ts {
+    grid-area: Ts;
+}
+
+.Lv {
+    grid-area: Lv;
+}
+
+.Mc {
+    grid-area: Mc;
+}
+
+.fl {
+    grid-area: fl;
+}
+
+.Cn {
+    grid-area: Cn;
+}
+
+.cn {
+    grid-area: cn;
+}
+
+.Rg {
+    grid-area: Rg;
+}
+
+.Ds {
+    grid-area: Ds;
+}
+
+.Mt {
+    grid-area: Mt;
+}
+
+.Hs {
+    grid-area: Hs;
+}
+
+.Bh {
+    grid-area: Bh;
+}
+
+.Sg {
+    grid-area: Sg;
+}
+
+.Db {
+    grid-area: Db;
+}
+
+.Rf {
+    grid-area: Rf;
+}
+
+.Ac {
+    grid-area: Ac;
+}
+
+.Ra {
+    grid-area: Ra;
+}
+
+.fr {
+    grid-area: fr;
+}
+
+.Ce {
+    grid-area: Ce;
+}
+
+.Pr {
+    grid-area: Pr;
+}
+
+.Nd {
+    grid-area: Nd;
+}
+
+.Pm {
+    grid-area: Pm;
+}
+
+.Sm {
+    grid-area: Sm;
+}
+
+.Eu {
+    grid-area: Eu;
+}
+
+.Gd {
+    grid-area: Gd;
+}
+
+.Td {
+    grid-area: Td;
+}
+
+.Dy {
+    grid-area: Dy;
+}
+
+.Ho {
+    grid-area: Ho;
+}
+
+.Er {
+    grid-area: Er;
+}
+
+.Tm {
+    grid-area: Tm;
+}
+
+.Yb {
+    grid-area: Yb;
+}
+
+.Lu {
+    grid-area: Lu;
+}
+
+.Lr {
+    grid-area: Lr;
+}
+
+.No {
+    grid-area: No;
+}
+
+.Md {
+    grid-area: Md;
+}
+
+.fm {
+    grid-area: fm;
+}
+
+.Es {
+    grid-area: Es;
+}
+
+.Cf {
+    grid-area: Cf;
+}
+
+.Bk {
+    grid-area: Bk;
+}
+
+.Cm {
+    grid-area: Cm;
+}
+
+.Am {
+    grid-area: Am;
+}
+
+.Up {
+    grid-area: Up;
+}
+
+.Np {
+    grid-area: Np;
+}
+
+.U {
+    grid-area: U;
+}
+
+.Pa {
+    grid-area: Pa;
+}
+
+.Th {
+    grid-area: Th;
+}
